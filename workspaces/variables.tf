@@ -5,3 +5,8 @@ variable "instance_type" {
         prod = "t3.medium"
     }
 }
+
+variable "instance_names"{
+    type = list(string)
+    default = ["mysql", "backend", "frontend"] 
+}
